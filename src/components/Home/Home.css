@@ -1,0 +1,27 @@
+.homeCanvas{
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+}
+.homeContainer{
+    background-color :white;
+    padding-top:4vamx;
+    border-radius:0 0 200px 200px ;
+    border-bottom : 200px solid white;
+    position:relative;
+    z-index:1;
+}
+.homeSkills{
+    background-color: hsl(219,8%,8%);
+    height:1500px;
+position: relative;
+padding:200px;
+box-sizing: border-box;
+prespective:450px;
+
+
+
+
+
+
+}
