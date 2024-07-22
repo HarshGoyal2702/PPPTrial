@@ -1,7 +1,8 @@
-import React from "react";
-import { ReactNavbar } from "overlay-navbar";
-import logo from "../../assets/react.svg"
-import {FaUserAlt} from "react-icons/fa"
+import React from 'react';
+import { ReactNavbar } from 'overlay-navbar';
+import logo from '../../assets/react.svg';
+import { FaUserAlt } from 'react-icons/fa';
+
 const Header = () => {
   return (
     <ReactNavbar
@@ -30,7 +31,6 @@ const Header = () => {
       ProfileIconElement={FaUserAlt}
       profileIconColor="HSL(250,100%,75%)"
       profileIconColorHover="white"
-
     />
   );
 };

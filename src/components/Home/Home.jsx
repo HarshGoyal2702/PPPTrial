@@ -4,6 +4,21 @@ import * as THREE from "three";
 import {Typography} from "@mui/material"
 import logo from "../../assets/react.svg";
 import { Timeline } from "@mui/icons-material";
+import {
+  SiCplusplus,
+  SiJavascript,
+  SiHtml5,
+  SiCss3,
+  SiReact,
+  SiTailwindcss,
+  SiNextdotjs,
+  SiTypescript,
+  SiExpress,
+  SiMongodb,
+  SiThreedotjs,
+  SiNodedotjs
+} from "react-icons/si"
+import YoutubeCard from "../YoutubeCard/YoutubeCard";
 const Home = () => {
   useEffect(() => {
     const scene = new THREE.Scene();
@@ -92,6 +107,60 @@ const Home = () => {
       <div className="homeContainer">
         <Typography variant="h3">TimeLine</Typography>
         <Timeline timeline={[1,2,3,4,5]}/>
+      </div>
+      <div className="homeSkills">
+        <Typography variant="h3">SKILLS</Typography>
+        <div className="homeCubeSkills">
+
+          <div className="homeCubeSkillsFaces homeCubeSkillsFace1">
+          <img src="" alt="Face1" />
+           </div>
+
+          <div className="homeCubeSkillsFaces homeCubeSkillsFace2">
+          <img src="" alt="Face2" />
+           </div>
+
+          <div className="homeCubeSkillsFaces homeCubeSkillsFace3">
+          <img src="" alt="Face3" />
+           </div>
+
+          <div className="homeCubeSkillsFaces homeCubeSkillsFace4">
+          <img src="" alt="Face4" />
+           </div>
+
+          <div className="homeCubeSkillsFaces homeCubeSkillsFace5">
+          <img src="" alt="Face5" />
+           </div>
+
+          <div className="homeCubeSkillsFaces homeCubeSkillsFace6">
+          <img src="" alt="Face6" />
+           </div>
+        </div>
+        <div className="cubeShadow"></div>
+        <div className="homeSkillsBox">
+          <SiCplusplus/>
+          <SiHtml5/>
+          <SiCss3/>
+          <SiJavascript/>
+          <SiMongodb/>
+          <SiExpress/>
+          <SiReact/>
+          <SiNodedotjs/>
+          <SiThreedotjs/>
+        </div>
+      </div> 
+      <div className="homeYoutube">
+        <Typography variant="h3">YOUTUBE VIDEOS</Typography>
+        <div className="homeYoutubeWrapper">
+          <YoutubeCard image="" title="Sample Video"/>
+          <YoutubeCard/>
+          <YoutubeCard/>
+          <YoutubeCard/>
+          <YoutubeCard/>
+          <YoutubeCard/>
+          <YoutubeCard/>
+          <YoutubeCard/>
+        </div>
       </div>
     </div>
   );
