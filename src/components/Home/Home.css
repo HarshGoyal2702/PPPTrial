@@ -1,23 +1,25 @@
-.homeCanvas{
+.homeCanvas {
     width: 100vw;
     height: 100vh;
     max-width: 100%;
-}
-.homeContainer{
-    background-color :white;
-    padding-top:4vamx;
-    border-radius:0 0 200px 200px ;
-    border-bottom : 200px solid white;
-    position:relative;
-    z-index:1;
-}
-.homeContainer > h3{
+  }
+  
+  .homeContainer {
+    background-color: white;
+    padding-top: 4vmax; /* Corrected typo */
+    border-radius: 0 0 200px 200px;
+    border-bottom: 200px solid white;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .homeContainer > h3 {
     text-align: center;
     color: rgba(22, 20, 20, 0.904);
     padding: 4vmax;
-
-}
-.homeSkills{
+  }
+  
+  .homeSkills {
     display: flex;
     transform: translateY(-200px);
     margin-bottom: -200px;
@@ -31,23 +33,23 @@
     position: relative;
     height: 1500px;
     background-color: hsl(219, 48%, 8%);
-}
-
-.homeSkills > h3{
+  }
+  
+  .homeSkills > h3 {
     text-align: center;
     color: white;
     margin-bottom: 4vmax;
     font-size: 4vmax;
-}
-
-.homeCubeSkills{
+  }
+  
+  .homeCubeSkills {
     width: 200px;
     height: 200px;
     animation: cubeRotation 15s linear infinite alternate;
     transform-style: preserve-3d;
-}
-
-.homeCubeSkillsFaces{
+  }
+  
+  .homeCubeSkillsFaces {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,71 +57,70 @@
     position: absolute;
     width: inherit;
     height: inherit;
-
-}
-.homeCubeSkillsFaces >img{
+  }
+  
+  .homeCubeSkillsFaces > img {
     width: inherit;
     height: inherit;
-}
-
-.homeCubeSkillsFace1{
-    transform:translate(0,0,150px);
-}
-
-.homeCubeSkillsFace2{
-    transform: rotateY(180deg) translate(0,0,150px);
-}
-
-.homeCubeSkillsFace3{
-    transform:rotateY(-90deg) translate(0,0,150px);
-}
-
-.homeCubeSkillsFace4{
-    transform:rotateY(90deg) translate(0,0,150px);
-}
-
-.homeCubeSkillsFace5{
-    transform:rotateY(180deg) translate(0,0,150px);
-}
-
-.homeCubeSkillsFace6{
-    transform:rotateY(180deg) translate(0,0,150px);
-}
-.cubeShadow{
+  }
+  
+  .homeCubeSkillsFace1 {
+    transform: translateZ(150px);
+  }
+  
+  .homeCubeSkillsFace2 {
+    transform: rotateY(180deg) translateZ(150px);
+  }
+  
+  .homeCubeSkillsFace3 {
+    transform: rotateY(-90deg) translateZ(150px);
+  }
+  
+  .homeCubeSkillsFace4 {
+    transform: rotateY(90deg) translateZ(150px);
+  }
+  
+  .homeCubeSkillsFace5 {
+    transform: rotateY(180deg) translateZ(150px);
+  }
+  
+  .homeCubeSkillsFace6 {
+    transform: rotateY(180deg) translateZ(150px);
+  }
+  
+  .cubeShadow {
     width: 300px;
     height: 40px;
     background-color: rgba(255, 255, 255, 0.171);
     border-radius: 50%;
     animation: cubeShadow 1s ease-in-out infinite alternate;
-    filter:blur(3px);
-}
-
-.homeSkillsBox{
+    filter: blur(3px);
+  }
+  
+  .homeSkillsBox {
     background-color: hsl(250, 100%, 75%);
     padding: 0 2vmax;
     position: absolute;
     display: flex;
     flex-direction: column;
-    right: -300px; 
+    right: -300px;
     animation-duration: 1s;
-    animation-timing-function:linear;
-    animation-fill-mode:forwards;
-
-}
-
-.homeSkillsBox >  svg{
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  
+  .homeSkillsBox > svg {
     font-size: 5vmax;
     color: white;
     transition: all 0.5s;
     margin: 10px;
-
-}
-
-.homeSkillsBox>svg:hover{
+  }
+  
+  .homeSkillsBox > svg:hover {
     transform: scale(1.2);
-}
-
-.homeYoutube{
+  }
+  
+  .homeYoutube {
     background-color: white;
     padding-top: 4vmax;
     transform: translateY(-200px);
@@ -128,53 +129,50 @@
     margin-bottom: -200px;
     box-sizing: border-box;
     min-height: 1000px;
-}
-
-.homeYoutube >h3{
+  }
+  
+  .homeYoutube > h3 {
     text-align: center;
     color: rgba(22, 20, 20, 0.904);
     padding: 4vmax;
-}
-
-.homeYoutubeWrapper{
+  }
+  
+  .homeYoutubeWrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 2vmax;
     width: 80%;
     margin: auto;
-}
-
-
-
-
-@keyframes cubeRotation{
-    to{
-        transform: rotateX(360deg) rotateY(480deg) rotateZ(720deg);
+  }
+  
+  @keyframes cubeRotation {
+    to {
+      transform: rotateX(360deg) rotateY(480deg) rotateZ(720deg);
     }
-}
-@keyframes cubeShadow {
-    to{
-        transform: scale(1.2) translateY(-10px);
+  }
+  
+  @keyframes cubeShadow {
+    to {
+      transform: scale(1.2) translateY(-10px);
     }
-    
-}
-
-@keyframes homeskillsBoxAnimationOn {
-    from{
-        right: -300px;
+  }
+  
+  @keyframes homeskillsBoxAnimationOn {
+    from {
+      right: -300px;
     }
-    to{
-
-        right: 40px;
+    to {
+      right: 40px;
     }
-}
-@keyframes homeskillsBoxAnimationOff{
-    from{
-        right: 40px;
+  }
+  
+  @keyframes homeskillsBoxAnimationOff {
+    from {
+      right: 40px;
     }
-    to{
-
-        right: -300px;
+    to {
+      right: -300px;
     }
-}
+  }
+  
